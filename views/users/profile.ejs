@@ -1,0 +1,204 @@
+<%- include('../partials/header.ejs'); %>
+
+<div class="container-fluid mt-3">
+
+    <div class="container-fluid w-100 font-weight-bold text-center">
+      <span class="h2 font-weight-bold text-info">PROFILE</span>
+    </div>
+  
+    <hr class="mt-3 mb-3">
+
+    <div class="container-fluid bg-light">
+        <div class="p-2">
+            <h3 class="font-italic"><%= "Welcome " + name %></h3>
+        </div>
+    </div>
+    <form>
+
+        <div class="container main-container mt-lg-1 mb-lg-5">    
+            
+            <div class="row w-100 m-auto font-weight-bold">
+               
+                <div class="col-12 text-left bg-light p-2">
+                    <h4 style="letter-spacing:1.75px">YOUR TRADE ITEMS</h4>
+                </div>
+                
+               <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>CATEGORY</th>
+                        <th>TITLE</th>
+                        <th style="max-width: 50px;"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% if(tradeItems.length){ 
+                        tradeItems.forEach(val => { 
+                            
+                            var temp = 0; 
+                            var id = "";
+                            if(currentTradingData){
+                                currentTradingData.forEach(e => { 
+
+                                    if(JSON.stringify(e.trade_item._id) === JSON.stringify(val._id) || JSON.stringify(e.trade_with._id) === JSON.stringify(val._id)){
+                                        if(e.status != 2){
+                                            temp = 1;
+                                            id = e._id;
+                                        }
+                                    }
+
+                                });
+                            }
+
+                            var status = "AVAILABLE";
+                            if(val.status == 2) status = "OFFER PENDING";
+                            else if(val.status == 3) status = "OFFER ACCEPTED";
+                            
+                            %>
+                            <tr>
+                                <td style="min-width: 40px; max-width: 50px;"><%= val.item_category %></td>
+                                <td style="min-width: 40px; max-width: 50px;"><%= val.item_name %></td>
+                                <td style="min-width: 60px; max-width: 60px;"><%= status %></td>
+                                <td style="min-width:60px; max-width: 80px;">
+                                    <form>
+                                        <button type="submit" class="btn btn-warning" formmethod="GET" formaction="/trades/<%=val._id%>/edit">EDIT</button>
+                                        <button class="btn btn-danger" formmethod="POST" formaction="/trades/<%=val._id%>?_method=DELETE">DELETE</button>
+                                        <% if(temp == 1){
+                                            %>
+                                                <button type="submit" class="btn btn-info" formmethod="GET" formaction="/users/offer/<%= id %>">MANAGE OFFER</button>
+                                            <%
+                                        } %>
+                                    </form>
+                                </td>
+                            </tr>
+                    <%  })%>
+
+                    <% }else{ %>    
+                    <tr>
+                        <td colspan="4">NO PRODUCTS ADDED</td>
+                    </tr>
+                    <% }%>
+                </tbody>
+               </table>
+
+            </div> 
+
+        </div>
+
+        <div class="container main-container mt-lg-1 mb-lg-5">    
+            
+            <div class="row w-100 m-auto font-weight-bold">
+               
+                <div class="col-12 text-left bg-light p-2">
+                    <h4 style="letter-spacing:1.75px">YOUR WATCHED TRADES</h4>
+                </div>
+                
+               <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>CATEGORY</th>
+                        <th>TITLE</th>
+                        <th style="max-width: 50px;"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% if(watchListData.length){
+                        watchListData.forEach(val => { 
+                            
+                            var status = "AVAILABLE";
+                            if(val.trade_item_id.status == 2){
+                                status = "NOT AVAILABLE";
+                            }
+                            else if(val.trade_item_id.status == 3){
+                                status = "PRODUCT TRADED";
+                            }
+                            
+                            %>
+                            <tr>
+                                <td><a href="/trades/<%= val.trade_item_id._id%>"><%= val.trade_item_id.item_category %></a></td>
+                                <td><%= val.trade_item_id.item_name %></td>
+                                <td><%= status %></td>
+                                <td style="max-width: 50px;">
+                                    <form>
+                                        <button class="btn btn-danger" formmethod="POST" formaction="/trades/<%=val._id%>/unwatch">UNWATCH</button>
+                                    </form>
+                                </td>
+                            </tr>
+                    <%  })%>
+
+                    <% }else{ %>    
+                    <tr>
+                        <td colspan="4">NO PRODUCTS ADDED</td>
+                    </tr>
+                    <% }%>
+                </tbody>
+               </table>
+
+            </div> 
+
+        </div>
+
+        <div class="container main-container mt-lg-1 mb-lg-5">    
+            
+            <div class="row w-100 m-auto font-weight-bold">
+               
+                <div class="col-12 text-left bg-light p-2">
+                    <h4 style="letter-spacing:1.75px">YOUR TRADE OFFERS</h4>
+                </div>
+                
+               <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>TITLE</th>
+                        <th>CATEGORY</th>
+                        <th>STATUS</th>
+                        <th style="max-width: 50px;"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% if(currentTradingData.length){
+                        currentTradingData.forEach(val => { 
+                            var hide = 0;
+                            if(val.creater_user_id == id){
+                                var status = "OFFER PENDING";
+                            if(val.status == 2){
+                                status = "OFFER ACCEPTED";
+                                hide = 1;
+                            }
+                            else if(val.status == 3) status = "OFFER REJECTED"; 
+                            %>
+                            <tr>
+                                <td><%= val.trade_with.item_category %></td>
+                                <td><%= val.trade_with.item_name %></td>
+                                <td><%= status %></td>
+                                <td style="max-width: 50px;">
+                                    <% if(hide != 1){%>
+                                    <form>
+                                        <button class="btn btn-danger" formmethod="POST" formaction="/users/offer/<%=val._id%>?_method=DELETE">CANCEL OFFER</button>
+                                    </form>
+                                    <% } %>
+                                </td>
+                            </tr>
+                            
+                         <%  }
+                        })%>
+
+                    <% }else{ %>    
+                    <tr>
+                        <td colspan="4">NO PRODUCTS ADDED</td>
+                    </tr>
+                    <% }%>
+                </tbody>
+               </table>
+
+            </div> 
+
+        </div>
+
+    </form>
+
+  </div>
+
+
+
+<%- include('../partials/footer.ejs') %>

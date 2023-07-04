@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/general.css">
+	<link rel="stylesheet" href="/css/footer_css.css">
+	<link rel="stylesheet" href="/css/navbar_css.css">
+    <script src="/jquery/jquery-3.6.3.min.js"></script>
+    <script src="/js/nav_js.js"></script>
+    <script src="/js/custom_js.js"></script>
+	<title><%= headerValue %></title>
+</head>
+<body>
+	
+    <nav class="p-2 custom-nav navbar navbar-expand-md navbar-nav">
+        <div class="">
+            <a class="navbar-brand" href="/"><img alt="BRAND LOGO"  src="/images/logo.png" height="40"></a>
+        </div>
+
+        <div class="container">
+            <ul class="navbar navbar-nav ml-auto">
+                <li><a class="btn trade-in-btn mr-lg-3" id="tradeButton-nav" href="/trades/new">Start Trading</a></li>
+                <% if(!user){ %>
+                    <li class="nav-item pr-3"><a class="nav-link text-dark font-weight-bold" href="/users/login">LOGIN</a></li>
+                    <li class="nav-item pr-3"><a class="nav-link text-dark font-weight-bold" href="/users/signup">SIGN UP</a></li>
+                <% }else{ %>
+                    <li class="nav-item pr-3"><a class="nav-link text-dark font-weight-bold" href="/users/profile">PROFILE</a></li>
+                    <li class="nav-item pr-3"><a class="nav-link text-dark font-weight-bold" href="/users/logout">LOGOUT</a></li>
+                <% } %>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-md container-fluid p-0 current-page-heading-div">
+        <div class="container-fluid">
+            <ul class="navbar navbar-nav p-1">
+                <li class="nav-item mr-lg-3 pr-lg-1"><a class="nav-link text-light home" href="/">HOME</a></li>
+                <li class="nav-item mr-lg-3 pr-lg-1"><a class="nav-link text-light trades" href="/trades">TRADES</a></li>
+                <% if(user){ %>
+                    <li class="nav-item mr-lg-3 pr-lg-1"><a class="nav-link text-light newTrade" href="/trades/new">NEW TRADE</a></li>
+                <% } %>
+            </ul>
+        </div>
+    </nav>
+
+
+    <%if(errorMessages.length > 0){ %>
+
+        <div class="container-fluid bg-light">
+            <div class="container-fluid p-2" style="width:90%">
+
+        <% errorMessages.forEach(message=>{%>
+            <label class="font-weight-bold text-danger"><%=message%></label>
+            <br>
+        <%}); %>
+
+            </div>
+        </div>
+
+    <%}%>
+
+    <%if(successMessages.length > 0){ %>
+
+        <div class="container-fluid bg-light">
+            <div class="container-fluid p-2" style="width:90%">
+
+        <% successMessages.forEach(message=>{%>
+            <label class="font-weight-bold text-success"><%=message%></label>
+            <br>
+        <%}); %>
+
+            </div>
+        </div>
+
+    <%}%>
+
+   

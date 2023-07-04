@@ -1,0 +1,46 @@
+<%- include('../partials/header.ejs') %>
+
+<div class="container-fluid mt-3">
+
+    <div class="container-fluid w-100 font-weight-bold text-center">
+      <span class="h2 font-weight-bold text-info">LOGIN</span>
+    </div>
+  
+    <hr class="mt-3 mb-3">
+
+    <form action="/users/login" method="POST">
+
+        <div class="container main-container mt-lg-5 mb-lg-5">    
+
+            <div class="row w-50 m-auto font-weight-bold">
+
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label class="p-0 m-0">EMAIL<span class="required">*</span></label>
+                            <input type="email" class="input form-control" name="email" required>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label class="p-0 m-0">PASSWORD<span class="required">*</span></label>
+                            <input type="password" class="input form-control" name="password" minlength="8" maxlength="64" required>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <button class="btn btn-success w-100">LOGIN</button>
+                </div>
+
+
+            </div> 
+
+        </div>
+
+    </form>
+
+  </div>
+
+
+
+<%- include('../partials/footer.ejs') %>

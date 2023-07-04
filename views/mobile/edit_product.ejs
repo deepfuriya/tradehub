@@ -1,0 +1,73 @@
+<%- include('../partials/header.ejs') %>
+
+<form>
+    
+    <div class="container main-container mt-lg-5">
+    <div class="row w-75 m-auto font-weight-bold">
+
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label class="p-0 m-0">MODEL CATEGORY<span class="required">*</span></label>
+                    <input type="text" class="input form-control" name="item_category" value="<%= data.item_category %>" required>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label class="p-0 m-0">MODEL NAME <span class="required">*</span></label>
+                    <input type="text" class="input form-control" name="item_name" value="<%= data.item_name %>" required>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label class="p-0 m-0">MODEL VARIANT (GB) <span class="required">*</span></label>
+                    <input type="text" class="input form-control" name="details[Capacity]" value="<%= data.details[0].Capacity %>" required>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label class="p-0 m-0">MODEL COLOR<span class="required">*</span></label>
+                    <input type="text" class="input form-control" name="details[Color]" value="<%= data.details[0].Color %>" required>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label class="p-0 m-0">DISPLAY <span class="required">*</span></label>
+                    <textarea class="input form-control" name="details[Display]" required><%= data.details[0].Display %></textarea>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label class="p-0 m-0">CAMERA<span class="required">*</span></label>
+                    <textarea class="input form-control" name="details[Camera]" required><%= data.details[0].Camera %></textarea>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label class="p-0 m-0">BATTERY<span class="required">*</span></label>
+                    <textarea class="input form-control" name="details[Battery]" required><%= data.details[0].Battery %></textarea>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label class="p-0 m-0">PRICE<span class="required">*</span></label>
+                    <textarea class="input form-control" name="price" required><%= data.price %></textarea>
+            </div>
+        </div>
+        
+        <div class="col-lg-12 mb-5">
+            <button type="submit" class="btn btn-warning" formmethod="POST" formaction="/trades/<%=data.id%>?_method=PUT">UPDATE</button>
+            <button class="btn btn-danger" formmethod="POST" formaction="/trades/<%=data.id %>">CANCEL</button>
+        </div>
+    </div>
+</div>
+</form>
+
+
+<%- include('../partials/footer.ejs') %>

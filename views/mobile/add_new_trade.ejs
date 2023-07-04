@@ -1,0 +1,72 @@
+<%- include('../partials/header.ejs') %>
+
+<form method="POST" action="/trades">
+    
+    <div class="container main-container mt-lg-5">
+    <div class="row w-75 m-auto font-weight-bold">
+
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label class="p-0 m-0">MODEL CATEGORY<span class="required">*</span></label>
+                    <input type="text" class="input form-control" name="item_category" required>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label class="p-0 m-0">MODEL NAME <span class="required">*</span></label>
+                    <input type="text" class="input form-control" name="item_name" required>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label class="p-0 m-0">MODEL VARIANT (GB) <span class="required">*</span></label>
+                    <input type="text" class="input form-control" name="details[Capacity]" required>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label class="p-0 m-0">MODEL COLOR<span class="required">*</span></label>
+                    <input type="text" class="input form-control" name="details[Color]" required>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label class="p-0 m-0">DISPLAY <span class="required">*</span></label>
+                    <textarea class="input form-control" name="details[Display]" required></textarea>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label class="p-0 m-0">CAMERA<span class="required">*</span></label>
+                    <textarea class="input form-control" name="details[Camera]" required></textarea>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label class="p-0 m-0">BATTERY<span class="required">*</span></label>
+                    <textarea class="input form-control" name="details[Battery]" required></textarea>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label class="p-0 m-0">PRICE<span class="required">*</span></label>
+                    <textarea class="input form-control" name="price" required></textarea>
+            </div>
+        </div>
+        
+        <div class="col-lg-12 mb-5">
+            <button type="submit" class="btn btn-success w-100">SAVE</button>
+        </div>
+    </div>
+</div>
+</form>
+
+
+<%- include('../partials/footer.ejs') %>

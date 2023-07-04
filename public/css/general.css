@@ -1,0 +1,84 @@
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+.current-page-heading-div{
+    background-color: #225780;
+    color: white;
+}
+#tradeButton{
+    background-color: #116399;
+    color: white;
+    font-size: 20px;
+    border-radius: 25px;
+    width:160px;
+}
+#tradeButton:hover{
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+.main-heading{
+    font-size: 60px;
+    font-weight: bold;
+}
+.bellow-heading{
+    font-size: 40px;
+}
+.custom-btn{
+    background-color: #116399;
+    color: white;
+    font-size: 20px;
+    border-radius: 25px;
+    width: auto;
+}
+.custom-card-css{
+    /* height: 500px; */
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.custom-card-css img{
+    max-height: 350 px;
+}
+.cat-heading{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cat-heading label{
+    margin-left: 20px;
+}
+.custom-trade-button{
+    background-color: #116399;
+    color: white;
+}
+.custom-trade-button:hover{
+    color: black;
+}
+.main-container{
+    min-width: 90%;
+}
+.loading-div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 100%;
+    transition: all 1s ease;
+}
+.spinner-border{
+    width: 5rem; height: 5rem;
+}
+.fade-out-animation{
+    opacity: 0;
+    visibility: hidden;
+}
+.required{
+    color:red;
+}

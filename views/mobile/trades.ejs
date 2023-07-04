@@ -1,0 +1,51 @@
+<%- include('../partials/header.ejs') %>
+
+    <div class=" container main-container">
+
+        <div class="cat p-0 mt-3">
+
+            <% var val = JSON.parse(temp);
+                var count = Object.keys(val.itemsByCategory).length;
+
+                if(count) { %>
+                <% 
+                for( var p in val.itemsByCategory){ %>
+                        
+                    <div class="cat-heading text-left font mt-2">
+                        <label class="h1 font-weight-bold"><%= p %></label>
+                    </div>
+
+                    <div class="row">
+
+                    <% val.itemsByCategory[p].forEach(element => { %>
+                            
+                        <div class="col-sm-3">
+                            <div class="card custom-card-css">
+                                <img class=" card-img-top" src="images/<%= element.image %>" alt="<%= element.category + 'image' %>">
+                                <div class="card-body">
+                                    <label class="card-title h5"><%= element.item_category + ' - ' + element.item_name %></label>
+                                    <br>
+                                        <a href="trades/<%= element._id %>" class="btn custom-trade-button">DETAILS</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <% }); %>
+                    </div>
+                    <% } %>
+                    
+                
+    
+             <% } else{ %>
+             
+                <div class="col-lg-12 text-center font-weight-bold text-uppercase h5">
+                    <p>There are no products to display</p>
+                </div>
+            
+            <% } %>
+        
+        </div>
+    </div>
+
+
+<%- include('../partials/footer.ejs') %>

@@ -1,0 +1,365 @@
+[{
+  "_id": {
+    "$oid": "6445e843021f7e0f2494c2fe"
+  },
+  "details": [
+    {
+      "Capacity": "64 GB",
+      "Color": "Blue",
+      "Display": "6.1-inch Super Retina XDR display with True Tone",
+      "Camera": "Dual 12MP cameras with Portrait mode, Depth Control, Portrait Lighting, Smart HDR, and 4K Dolby Vision HDR video up to 30 fps",
+      "Battery": "Fast-charge capable: Up to 50% charge in around 30 minutes with 20W adapter or higher"
+    }
+  ],
+  "item_category": "IPHONE 12",
+  "item_name": "64 GB",
+  "price": "1",
+  "image": "12/12_1.jpeg",
+  "created_by": {
+    "$oid": "645d58561f1630506c21fb71"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T02:24:03.772Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T16:08:00.527Z"
+  },
+  "__v": 0,
+  "status": "1"
+},{
+  "_id": {
+    "$oid": "6445e8a50a855478c8ac0de6"
+  },
+  "details": [
+    {
+      "Capacity": "128 GB",
+      "Color": "Purple",
+      "Display": "6.1-inch Super Retina XDR display with True Tone",
+      "Camera": "Dual 12MP cameras with Portrait mode, Depth Control, Portrait Lighting, Smart HDR, and 4K Dolby Vision HDR video up to 30 fps",
+      "Battery": "Fast-charge capable: Up to 50% charge in around 30 minutes with 20W adapter or higher"
+    }
+  ],
+  "item_category": "IPHONE 12",
+  "item_name": "128 GB",
+  "price": "1",
+  "image": "12/12_2.jpeg",
+  "created_by": {
+    "$oid": "645d58561f1630506c21fb71"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T02:24:03.772Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T19:56:38.695Z"
+  },
+  "__v": 0,
+  "status": "1"
+},{
+  "_id": {
+    "$oid": "6445e8e90a855478c8ac0de7"
+  },
+  "details": [
+    {
+      "Capacity": "256 GB",
+      "Color": "Green",
+      "Display": "6.1-inch Super Retina XDR display with True Tone",
+      "Camera": "Dual 12MP cameras with Portrait mode, Depth Control, Portrait Lighting, Smart HDR, and 4K Dolby Vision HDR video up to 30 fps",
+      "Battery": "Fast-charge capable: Up to 50% charge in around 30 minutes with 20W adapter or higher"
+    }
+  ],
+  "item_category": "IPHONE 12",
+  "item_name": "256 GB",
+  "price": "1",
+  "image": "12/12_3.jpeg",
+  "created_by": {
+    "$oid": "645d58561f1630506c21fb71"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T02:24:03.772Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-10T19:12:27.729Z"
+  },
+  "__v": 0,
+  "status": "1"
+},{
+  "_id": {
+    "$oid": "6445ef9f0a855478c8ac0de8"
+  },
+  "details": [
+    {
+      "Capacity": "64 GB",
+      "Color": "Blue",
+      "Display": "6.1-inch Super Retina XDR display with True Tone",
+      "Camera": "Dual 12MP cameras with Portrait mode, Depth Control, Portrait Lighting, Smart HDR, and 4K Dolby Vision HDR video up to 30 fps",
+      "Battery": "Fast-charge capable: Up to 50% charge in around 30 minutes with 20W adapter or higher"
+    }
+  ],
+  "item_category": "IPHONE 13",
+  "item_name": "64 GB",
+  "price": "1",
+  "image": "13/13_1.jpeg",
+  "created_by": {
+    "$oid": "645d58561f1630506c21fb71"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T02:24:03.772Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T16:33:53.456Z"
+  },
+  "__v": 0,
+  "status": "1"
+},{
+  "_id": {
+    "$oid": "6445efd40a855478c8ac0de9"
+  },
+  "details": [
+    {
+      "Capacity": "64 GB",
+      "Color": "Pink",
+      "Display": "6.1-inch Super Retina XDR display with True Tone",
+      "Camera": "Dual 12MP cameras with Portrait mode, Depth Control, Portrait Lighting, Smart HDR, and 4K Dolby Vision HDR video up to 30 fps",
+      "Battery": "Fast-charge capable: Up to 50% charge in around 30 minutes with 20W adapter or higher"
+    }
+  ],
+  "item_category": "IPHONE 13",
+  "item_name": "64 GB",
+  "price": "1",
+  "image": "13/13_2.jpeg",
+  "created_by": {
+    "$oid": "645d58561f1630506c21fb71"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T02:24:03.772Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T16:27:35.991Z"
+  },
+  "__v": 0,
+  "status": "1"
+},{
+  "_id": {
+    "$oid": "6445effa0a855478c8ac0dea"
+  },
+  "details": [
+    {
+      "Capacity": "64 GB",
+      "Color": "White",
+      "Display": "6.1-inch Super Retina XDR display with True Tone",
+      "Camera": "Dual 12MP cameras with Portrait mode, Depth Control, Portrait Lighting, Smart HDR, and 4K Dolby Vision HDR video up to 30 fps",
+      "Battery": "Fast-charge capable: Up to 50% charge in around 30 minutes with 20W adapter or higher"
+    }
+  ],
+  "item_category": "IPHONE 14",
+  "item_name": "64 GB",
+  "price": "1",
+  "image": "14/14_1.jpeg",
+  "created_by": {
+    "$oid": "645d58561f1630506c21fb71"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T02:24:03.772Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T22:01:02.368Z"
+  },
+  "__v": 0,
+  "status": "1"
+},{
+  "_id": {
+    "$oid": "6445f5fd554d054f10cdd2eb"
+  },
+  "details": [
+    {
+      "Capacity": "64 GB",
+      "Color": "WHITE",
+      "Display": "6.1-inch Super Retina XDR display with True Tone",
+      "Camera": "Dual 12MP cameras with Portrait mode, Depth Control, Portrait Lighting, Smart HDR, and 4K Dolby Vision HDR video up to 30 fps",
+      "Battery": "Fast-charge capable: Up to 50% charge in around 30 minutes with 20W adapter or higher"
+    }
+  ],
+  "item_category": "IPHONE 12",
+  "item_name": "64 GB",
+  "price": "1",
+  "image": "12/12_4.jpeg",
+  "created_by": {
+    "$oid": "645d58b51f1630506c21fb72"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T03:22:37.881Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-24T03:22:37.881Z"
+  },
+  "__v": 0,
+  "status": "1"
+},{
+  "_id": {
+    "$oid": "6445f6490a855478c8ac0df3"
+  },
+  "details": [
+    {
+      "Capacity": "128 GB",
+      "Color": "Black",
+      "Display": "6.1-inch Super Retina XDR display with True Tone",
+      "Camera": "Dual 12MP cameras with Portrait mode, Depth Control, Portrait Lighting, Smart HDR, and 4K Dolby Vision HDR video up to 30 fps",
+      "Battery": "Fast-charge capable: Up to 50% charge in around 30 minutes with 20W adapter or higher"
+    }
+  ],
+  "item_category": "IPHONE 13",
+  "item_name": "128 GB",
+  "price": "1",
+  "image": "13/13_2.jpeg",
+  "created_by": {
+    "$oid": "645d58b51f1630506c21fb72"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T03:22:37.881Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T16:54:45.450Z"
+  },
+  "__v": 0,
+  "status": "1"
+},{
+  "_id": {
+    "$oid": "6445f6650a855478c8ac0df4"
+  },
+  "details": [
+    {
+      "Capacity": "256 GB",
+      "Color": "Product (RED)",
+      "Display": "6.1-inch Super Retina XDR display with True Tone",
+      "Camera": "Dual 12MP cameras with Portrait mode, Depth Control, Portrait Lighting, Smart HDR, and 4K Dolby Vision HDR video up to 30 fps",
+      "Battery": "Fast-charge capable: Up to 50% charge in around 30 minutes with 20W adapter or higher"
+    }
+  ],
+  "item_category": "IPHONE 13",
+  "item_name": "256 GB",
+  "price": "1",
+  "image": "13/13_3.jpeg",
+  "created_by": {
+    "$oid": "645d58b51f1630506c21fb72"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T03:22:37.881Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-24T03:22:37.881Z"
+  },
+  "__v": 0,
+  "status": "1"
+},{
+  "_id": {
+    "$oid": "6445f6860a855478c8ac0df5"
+  },
+  "details": [
+    {
+      "Capacity": "128 GB",
+      "Color": "Yellow",
+      "Display": "6.1-inch Super Retina XDR display with True Tone",
+      "Camera": "Dual 12MP cameras with Portrait mode, Depth Control, Portrait Lighting, Smart HDR, and 4K Dolby Vision HDR video up to 30 fps",
+      "Battery": "Fast-charge capable: Up to 50% charge in around 30 minutes with 20W adapter or higher"
+    }
+  ],
+  "item_category": "IPHONE 14",
+  "item_name": "128 GB",
+  "price": "1",
+  "image": "14/14_2.jpeg",
+  "created_by": {
+    "$oid": "645d58b51f1630506c21fb72"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T03:22:37.881Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-24T03:22:37.881Z"
+  },
+  "__v": 0,
+  "status": "1"
+},{
+  "_id": {
+    "$oid": "6445f6960a855478c8ac0df6"
+  },
+  "details": [
+    {
+      "Capacity": "256 GB",
+      "Color": "Blue",
+      "Display": "6.1-inch Super Retina XDR display with True Tone",
+      "Camera": "Dual 12MP cameras with Portrait mode, Depth Control, Portrait Lighting, Smart HDR, and 4K Dolby Vision HDR video up to 30 fps",
+      "Battery": "Fast-charge capable: Up to 50% charge in around 30 minutes with 20W adapter or higher"
+    }
+  ],
+  "item_category": "IPHONE 14",
+  "item_name": "256 GB",
+  "price": "1",
+  "image": "14/14_3.jpeg",
+  "created_by": {
+    "$oid": "645d58b51f1630506c21fb72"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T03:22:37.881Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T17:34:19.621Z"
+  },
+  "__v": 0,
+  "status": "1"
+},{
+  "_id": {
+    "$oid": "6445f6d10a855478c8ac0df7"
+  },
+  "details": [
+    {
+      "Capacity": "256 GB",
+      "Color": "Product (RED)",
+      "Display": "6.1-inch Super Retina XDR display with True Tone",
+      "Camera": "Dual 12MP cameras with Portrait mode, Depth Control, Portrait Lighting, Smart HDR, and 4K Dolby Vision HDR video up to 30 fps",
+      "Battery": "Fast-charge capable: Up to 50% charge in around 30 minutes with 20W adapter or higher"
+    }
+  ],
+  "item_category": "IPHONE 13",
+  "item_name": "256 GB",
+  "price": "1",
+  "image": "13/13_4.jpeg",
+  "created_by": {
+    "$oid": "645d58b51f1630506c21fb72"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T03:22:37.881Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T17:14:53.167Z"
+  },
+  "__v": 0,
+  "status": "1"
+},{
+  "_id": {
+    "$oid": "6445f6e80a855478c8ac0df8"
+  },
+  "details": [
+    {
+      "Capacity": "128 GB",
+      "Color": "Green",
+      "Display": "6.1-inch Super Retina XDR display with True Tone",
+      "Camera": "Dual 12MP cameras with Portrait mode, Depth Control, Portrait Lighting, Smart HDR, and 4K Dolby Vision HDR video up to 30 fps",
+      "Battery": "Fast-charge capable: Up to 50% charge in around 30 minutes with 20W adapter or higher"
+    }
+  ],
+  "item_category": "IPHONE 13",
+  "item_name": "128 GB",
+  "price": "1",
+  "image": "13/13_5.jpeg",
+  "created_by": {
+    "$oid": "645d58b51f1630506c21fb72"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T03:22:37.881Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T18:43:14.622Z"
+  },
+  "__v": 0,
+  "status": "1"
+}]
